@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Lets learn DOM</h1>
+    <div class="container">
+        <h3 class="head1">I am a regular headline</h3>
+        <p id="p1">I am the first paragraph</p>
+        <p class="p2"></p>
+        <div class="from-ip">
+            <label for="my-input">Enter Your Name</label>
+        </div>
+    </div>
+    <script>
+        function handle(){
+            alert("You clicked the button")
+        }
+         function ubdateOutput(){
+            let input = document.getElementById("my-input").value;
+            document.getElementById("p2").innerHTML = "You typed: " + input;
+         }
+
+    </script> -->
+    <p id="p2"></p>
+    <input type="text" id="p" onchange="blurFun()">
+    <script>
+        function blurFun(){
+            let a = document.getElementById("p").value;
+            console.log(a);
+            document.getElementById("p2").innerHTML = "you typed: " + a;
+        }
+    </script>
+</body>
+</html>
